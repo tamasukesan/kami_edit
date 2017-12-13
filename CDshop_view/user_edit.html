@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CDshop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Music Store</h1>
+    <p>CD & DVD</p>
+  </div>
+</div>
+
+<header>
+<nav class="navbar navbar-inverse">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="glyphicon glyphicon-home" href="user_top.html"> Home</a></li>
+        <li><a class="glyphicon glyphicon-user" href="user_show.html"> Mypage</a></li>
+        <li><a class="glyphicon glyphicon-shopping-cart" href="cart.html"> Cart list</a></li>
+        <li><a class="glyphicon glyphicon-log-out" href="top.html"> logout</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">ようこそ 〇〇 さん。</p></li>
+        <li><form class="navbar-form navbar-left" role="search">
+                   <div class="form-group">
+                       <input type="text" class="form-control" placeholder="商品検索">
+                   </div>
+                   <button type="submit" class="btn btn-default glyphicon glyphicon-search" aria-hidden="true">検索</button>
+            </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+<body>
+
+	<div class="container">
+			<h2>個人情報の編集</h2>
+		<div class="row">
+			<div class="col-sm-12 col-md-3">
+			</div>
+
+			<div class="col-sm-12 col-md-9">
+				<form action="#" method="post">
+<!-- 個人情報 -->
+						<label>苗字：</label><br>
+							<input type="text" class="form-control">
+						<label>苗字カナ：</label><br>
+							<input type="text" class="form-control">
+						<label>名前：</label><br>
+							<input type="text" class="form-control">
+						<label>名前カナ：</label><br>
+							<input type="text" class="form-control">
+						<label>郵便：</label><br>
+							<input type="text" class="form-control">
+						<label>住所：</label><br>
+							<input type="text" class="form-control">
+						<label>電話：</label><br>
+							<input type="text" class="form-control">
+						<label>パスワード：※x文字以上</label><br>
+							<input type="text" class="form-control">
+						<label>パスワード（確認）：</label><br>
+							<input type="text" class="form-control">
+
+<!-- 個人情報更新するボタン -->
+						<a href="user_show.html" type="submit" class="btn btn-lg btn-block btn-info">更新</a>
+				</form>
+			</div>
+		</div>
+
+
+</div><br><br>
+</body>
+		<footer class="container-fluid text-center">
+          <p>@cosin 11</p>
+        </footer>
+</html>

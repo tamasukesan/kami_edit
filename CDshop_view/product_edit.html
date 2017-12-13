@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CDshop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Music Store</h1>
+    <p>CD & DVD</p>
+  </div>
+</div>
+
+<header>
+<nav class="navbar navbar-inverse">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="glyphicon glyphicon-home" href="admin_top.html"> Home</a></li>
+        <li><a class="glyphicon glyphicon-user" href="user_index.html"> Users</a></li>
+        <li><a class="glyphicon glyphicon-log-out" href="top.html"> logout</a></li>
+        <li><a class="glyphicon glyphicon-star" href="product_new.html"> New item</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">管理者ページ</p></li>
+        <li><form class="navbar-form navbar-left" role="search">
+                   <div class="form-group">
+                       <input type="text" class="form-control" placeholder="商品検索">
+                   </div>
+                   <button type="submit" class="btn btn-default glyphicon glyphicon-search" aria-hidden="true">検索</button>
+            </form>
+        </li>
+      </ul>
+    </div>
+</nav>
+</header>
+
+<body>
+
+
+	<div class="container">
+	  <div class="row">
+	  	<h2>CD情報の編集</h2>
+			<div class="col-xs-3">
+					<!-- CDのジャケット画像の編集部分 -->
+						<img src="sample.png" alt="ジャケット画像" style="width :200px; height :200px"　class="mx-auto">
+						<input type="button" value="ファイル選択" onClick="$('#file').click();">
+						<button type="submit" class="btn btn-md btn-block btn-info">ジャケット画像更新</button>
+			</div>
+
+			<div class="col-xs-9">
+				<form action="#" method="post">
+
+						<!-- CDの情報 valueの中には編集するCDの情報を表示します-->
+						<label>シングル/アルバム名：</label><br>
+							<input type="text" class="form-control" value="日本の四季">
+						<label>アーティスト：</label><br>
+							<input type="text" class="form-control" placeholder="CDのアーティスト名を入力してください" value="JJ">
+						<lanel>レーベル：</lanel><br>
+							<input type="text" class="form-control" value="J-record">
+						<label>ジャンル：</label><br>
+							<select class="form-control" id="sel1">
+						        <option>ミュージック</option>
+						        <option>ロック</option>
+						        <option>POP</option>
+						        <option>ジャズ・フュージョン</option>
+						        <option>アニメ・ゲーム</option>
+						        <option>クラシック</option>
+						        <option>ソウル・R&B</option>
+						    </select>
+
+	<br>
+
+
+						<!-- 曲目リスト disc/track/各trackのアーティストの編集 -->
+
+							<!-- <div class="container"> -->
+							  <h3>収録曲リスト</h3>
+							  <table class="table table-striped">
+							    <thead>
+							      <tr>
+							        <th>Disc No.</th>
+							        <th>track</th>
+							        <th>Artist</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td><input type="text" class="form-control" value="春"></td>
+							        <td><input type="text" class="form-control" value="あけぼの"></td>
+							        <td><input type="text" class="form-control" value="JJ"></td>
+							      </tr>
+							      <tr>
+							        <td><input type="text" class="form-control" value="夏"></td>
+							        <td><input type="text" class="form-control" value="よる"></td>
+							        <td><input type="text" class="form-control" value="JJ"></td>
+							      </tr>
+							      <tr>
+							        <td><input type="text" class="form-control" value="夏"></td>
+							        <td><input type="text" class="form-control" value="月のころはさらなり"></td>
+							        <td><input type="text" class="form-control" value="JJ feat.SAM"></td>
+							      </tr>
+							    </tbody>
+							  </table>
+							<!-- </div> -->
+	<br>
+
+						<a href="admin_product_show.html" type="submit" class="btn btn-lg btn-block btn-info">更新</a><br>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</div><br><br>
+</body>
+		<footer class="container-fluid text-center">
+          <p>@cosin 11</p>
+        </footer>
+</html>

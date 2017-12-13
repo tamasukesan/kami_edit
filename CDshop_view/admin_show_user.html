@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CDshop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Music Store</h1>
+    <p>CD & DVD</p>
+  </div>
+</div>
+
+<header>
+<nav class="navbar navbar-inverse">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="glyphicon glyphicon-home" href="admin_top.html"> Home</a></li>
+        <li><a class="glyphicon glyphicon-user" href="user_index.html"> Users</a></li>
+        <li><a class="glyphicon glyphicon-log-out" href="top.html"> logout</a></li>
+        <li><a class="glyphicon glyphicon-star" href="product_new.html"> New item</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">管理者ページ</p></li>
+        <li><form class="navbar-form navbar-left" role="search">
+                   <div class="form-group">
+                       <input type="text" class="form-control" placeholder="商品検索">
+                   </div>
+                   <button type="submit" class="btn btn-default glyphicon glyphicon-search" aria-hidden="true">検索</button>
+            </form>
+        </li>
+      </ul>
+    </div>
+</nav>
+</header>
+
+<div class="container-fluid">
+
+	<div class="row">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8">
+			<h2> 会員情報</h2>
+			<div>
+				<table class="table border="3" rules="none" frame="box">
+					<thead>
+						<tr class="info">
+							<td width="20%">
+								お名前:<br>
+								佐藤 鈴愛
+							</td>
+							<td width="20%">
+								ふりがな:<br>
+								サトウ レイア
+							</td>
+							<td colspan="2" width="60%">
+								ご住所:<br>
+								〒000-0000　
+								神奈川県701号室
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								電話番号:<br>
+								09099993333
+							</td>
+							<td>
+								メールアドレス:<br>
+								abd@mail.com
+							</td>
+							<td colspan="2">
+								パスワード:<br>
+								＊＊＊＊＊＊＊
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-xs-8"></div>
+		<div class="col-xs-4">
+			<a href="admin_user_edit.html" type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-cog" aria-hidden="true""></span> 登録内容の編集</a>
+		</div>
+		<!-- <div class="col-xs-2"></div> -->
+		</div>
+
+
+
+
+	<div class="row">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8">
+			<h2> 購入履歴</h2>
+			<div>
+				<table class="table border="3" rules="none" frame="box">
+					<thead>
+						<tr class="info">
+							<td width="20%">
+								購入日<br>
+								2017/12/1
+							</td>
+							<td>
+								購入価格総計<br>
+								¥ 2,000-
+							</td>
+							<td>
+								送付先<br>
+								登録住所 〒000-0000 
+								神奈川県701号室
+							</td>
+							<td>
+								ステータス<br>
+								配達済み
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="img"></div>
+								<br>link_to CD_show
+							</td>
+							<td colspan="3">
+								CD_name<br>
+								購入枚数: 1枚<br>
+								小計 ¥ 1,000-
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="img"></div>
+							</td>
+							<td colspan="3">
+								CD_name<br>
+								購入枚数: 1枚<br>
+								小計 ¥ 1,000-
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-xs-2"></div>
+	</div>
+</div>
+</div><br><br>
+</body>
+		<footer class="container-fluid text-center">
+          <p>@cosin 11</p>
+        </footer>
+</html>

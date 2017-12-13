@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CDshop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Music Store</h1>
+    <p>CD & DVD</p>
+  </div>
+</div>
+
+<header>
+<nav class="navbar navbar-inverse">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="glyphicon glyphicon-home" href="admin_top.html"> Home</a></li>
+        <li><a class="glyphicon glyphicon-user" href="user_index.html"> Users</a></li>
+        <li><a class="glyphicon glyphicon-log-out" href="top.html"> logout</a></li>
+        <li><a class="glyphicon glyphicon-star" href="product_new.html"> New item</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">管理者ページ</p></li>
+        <li><form class="navbar-form navbar-left" role="search">
+                   <div class="form-group">
+                       <input type="text" class="form-control" placeholder="商品検索">
+                   </div>
+                   <button type="submit" class="btn btn-default glyphicon glyphicon-search" aria-hidden="true">検索</button>
+            </form>
+        </li>
+      </ul>
+    </div>
+</nav>
+</header>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-md-offset-5">
+          <h2>管理者ページ</h2>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <hr>
+
+      <div class="row">
+
+        
+
+        <!-- Content -->
+        <div class="col-md-12" >
+          <h3 class="col-md-7 col-md-offset-5">商品一覧</h3>
+          <input type="text" name="search" class="col-md-12" placeholder="Search..">
+          <table class="table table-hover">
+            <thead>
+              <th>アーティスト名</th>
+              <th>シングル/アルバム名</th>
+              <th>値段</th>
+              <th>レーベル名</th>
+              <th>ジャンル</th>
+              <th>曲数</th>
+              <th>在庫数</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>西野カナ</td>
+                <td>LOVE it(初回生産限定盤)(DVD付) CD+DVD</td>
+                <td>3068</td>
+                <td>SME</td>
+                <td>PoP</td>
+                <td>15</td>
+                <td>5</td>
+                <td><a href="admin_product_show.html"> 詳細</a></td>
+                <td><a href="product_edit.html"> 編集</a></td>
+                <td><a>削除</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script src="bootstrap.min.js"></script>
+</body>
+
+		<footer class="container-fluid text-center">
+      <p>@cosin 11</p>
+    </footer>
+</html>
